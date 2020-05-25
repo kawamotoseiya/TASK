@@ -1,0 +1,90 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+body{
+	width: 960px;
+	margin: 50px auto;
+}
+.clearfix::after {
+  	content: "";
+  	display: block;
+  	clear: both;
+}
+.box1{
+	width: 300px;
+	float: left;
+	margin-right: 30px;
+	border: 1px solid #eee;
+	position: relative;
+}
+.box2{
+	width: 300px;
+	float: left;
+	margin-right: 30px;
+	border: 1px solid #eee;
+	position: relative;
+}
+.box3{
+	width: 300px;
+	float: left;
+	border: 1px solid #eee;
+	position: relative;
+}
+.image{
+	display: block;
+	width: 280px;
+	height: 150px;
+	margin:auto;
+	padding: 10px;
+	object-fit: cover;
+	object-position: bottom;
+}
+span{
+	position: absolute;
+	top: 0;
+    left: 0;
+    padding: 3px;
+	background-color: #FF9A4B;
+	color: white;
+}
+h3{
+	padding-top: 5px;
+	padding-left: 10px;
+}
+p{
+	padding: 10px;
+}
+@media screen and (max-width: 768px){
+	body{
+		width: 100%;
+		margin: 50px auto;
+	}
+	.box1{
+		width: 90%;
+		margin: auto;
+		margin-bottom: 20px;
+		float: none;
+	}
+	.box2{
+		width: 90%;
+		margin: auto;
+		margin-bottom: 20px;
+		float: none;
+	}
+	.box3{
+		width: 90%;
+		margin: auto;
+		float: none;
+	}
+	.image{
+		width: 100%;
+	}
+	h3{
+		width: 100%;
+	}
+	p{
+		width: 100%;
+	}
+}
